@@ -14,7 +14,7 @@ class RecipeCard extends HTMLElement {
 		// A3. TODO - Create a style element - This will hold all of the styles for the Web Component
 		let styleEl = document.createElement('style');
 		// A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything in the <style> tag>)
-		styleEl.innerHTML = `<style>
+		styleEl.textContent = `
 		* {
 		  font-family: sans-serif;
 		  margin: 0;
@@ -90,7 +90,7 @@ class RecipeCard extends HTMLElement {
 		  color: #70757A;
 		  font-size: 12px;
 		}
-	  </style>`;
+	  `;
 		
 		// A5. TODO - Append the <style> and <article> elements to the Shadow DOM
 		shdowEl.appendChild(styleEl);
@@ -131,7 +131,7 @@ class RecipeCard extends HTMLElement {
 		//           literals (template strings) and element.innerHTML for this.
 		//           Remember to replace all the placeholders in the template with the data passed in.
 		//           i.e. imgSrc, titleLnk, etc
-		articleEl.innerHTML = `<article>
+		articleEl.innerHTML = `
 		<img src="${data.imgSrc}"
 		  alt="${data.imgAlt}">
 		<p class="title">
@@ -147,7 +147,7 @@ class RecipeCard extends HTMLElement {
 		<p class="ingredients">
 		  ${data.ingredients}
 		</p>
-	  </article>`;
+	  `;
 	}
 }
 

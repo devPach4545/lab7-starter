@@ -62,6 +62,7 @@ function saveRecipesToStorage(recipes) {
 	//            header. It is possible in only a single line, but should
 	//            be no more than a few lines.
 }
+
 /**
  * Adds the necessary event handlers to <form> and the clear storage
  * <button>.
